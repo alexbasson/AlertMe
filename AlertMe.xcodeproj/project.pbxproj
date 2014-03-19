@@ -12,9 +12,9 @@
 		FA25FE8F18D922650085F1B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F7E18D7D51000CE2D3F /* UIKit.framework */; };
 		FA25FE9018D922650085F1B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F7A18D7D51000CE2D3F /* Foundation.framework */; };
 		FA25FE9618D922650085F1B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA25FE9418D922650085F1B6 /* InfoPlist.strings */; };
-		FA25FE9818D922650085F1B6 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA25FE9718D922650085F1B6 /* ExampleSpec.mm */; };
 		FA25FEA218D9229D0085F1B6 /* libCedar-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA25FE7918D922470085F1B6 /* libCedar-StaticLib.a */; };
 		FA25FEBC18D923E90085F1B6 /* libUIKit+PivotalSpecHelper-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA25FEB118D923940085F1B6 /* libUIKit+PivotalSpecHelper-StaticLib.a */; };
+		FA25FEBE18D924240085F1B6 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA25FEBD18D924240085F1B6 /* ViewControllerSpec.mm */; };
 		FA25FEC118D925A70085F1B6 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA25FEB318D923940085F1B6 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */; };
 		FAB62F7B18D7D51000CE2D3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F7A18D7D51000CE2D3F /* Foundation.framework */; };
 		FAB62F7D18D7D51000CE2D3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F7C18D7D51000CE2D3F /* CoreGraphics.framework */; };
@@ -162,10 +162,10 @@
 		FA25FE8C18D922650085F1B6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FA25FE9318D922650085F1B6 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		FA25FE9518D922650085F1B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FA25FE9718D922650085F1B6 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		FA25FE9918D922650085F1B6 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		FA25FE9C18D922650085F1B6 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		FA25FEA318D923940085F1B6 /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = Externals/PivotalCoreKit/UIKit/UIKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		FA25FEBD18D924240085F1B6 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
 		FAB62F7718D7D51000CE2D3F /* AlertMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB62F7A18D7D51000CE2D3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAB62F7C18D7D51000CE2D3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -239,10 +239,10 @@
 		FA25FE9118D922650085F1B6 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				FA25FE9718D922650085F1B6 /* ExampleSpec.mm */,
 				FA25FEB818D923B00085F1B6 /* Externals */,
 				FA25FE9918D922650085F1B6 /* Rakefile */,
 				FA25FE9218D922650085F1B6 /* Supporting Files */,
+				FA25FEBD18D924240085F1B6 /* ViewControllerSpec.mm */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -564,7 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA25FE9818D922650085F1B6 /* ExampleSpec.mm in Sources */,
+				FA25FEBE18D924240085F1B6 /* ViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
