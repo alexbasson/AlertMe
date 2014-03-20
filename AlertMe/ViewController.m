@@ -1,4 +1,5 @@
 #import "ViewController.h"
+#import "APBAlertView.h"
 
 @interface ViewController () <UIAlertViewDelegate>
 @property (nonatomic, weak, readwrite) IBOutlet UIButton *button;
@@ -8,36 +9,25 @@
 @implementation ViewController
 
 - (IBAction)buttonTapped:(id)sender {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert!"
-                                                        message:@"Tap a response"
-                                                       delegate:self
-                                              cancelButtonTitle:@"Cancel"
-                                              otherButtonTitles:@"Choice 1", @"Choice 2", nil];
+    APBAlertView *alertView = [[APBAlertView alloc] initWithTitle:@"Alert!"
+                                                          message:@"Tap a response"
+                                                cancelButtonTitle:@"Cancel"
+                                                otherButtonTitles:@[@"Choice 1", @"Choice 2"]
+                                                    cancelHandler:^{
+                                                        self.label.text = @"You tapped 'Cancel'";
+                                                    }
+                                              confirmationHandler:^(NSInteger otherButtonIndex) {
+                                                  switch (otherButtonIndex) {
+                                                      case 0:
+                                                          self.label.text = @"You tapped 'Choice 1'";
+                                                          break;
+                                                      case 1:
+                                                          self.label.text = @"You tapped 'Choice 2'";
+                                                      default:
+                                                          break;
+                                                  }
+                                              }];
     [alertView show];
-}
-
-//
-// Lots and lots of other code
-//
-
-#pragma mark - <UIAlertViewDelegate>
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSString *labelText;
-    switch (buttonIndex) {
-        case 0:
-            labelText = @"You tapped 'Cancel'";
-            break;
-        case 1:
-            labelText = @"You tapped 'Choice 1'";
-            break;
-        case 2:
-            labelText = @"You tapped 'Choice 2'";
-            break;
-        default:
-            break;
-    }
-    self.label.text = labelText;
 }
 
 @end
