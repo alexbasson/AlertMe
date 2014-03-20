@@ -18,6 +18,9 @@
 		FA25FEC118D925A70085F1B6 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA25FEB318D923940085F1B6 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */; };
 		FA25FEC418DA71290085F1B6 /* APBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA25FEC318DA71290085F1B6 /* APBAlertView.m */; };
 		FA25FEC618DA72580085F1B6 /* APBAlertViewSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA25FEC518DA72580085F1B6 /* APBAlertViewSpec.mm */; };
+		FA25FED618DA7B580085F1B6 /* APBAlertViewDeferred.m in Sources */ = {isa = PBXBuildFile; fileRef = FA25FED518DA7B580085F1B6 /* APBAlertViewDeferred.m */; };
+		FA25FED818DA7B6F0085F1B6 /* APBAlertViewDeferredSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA25FED718DA7B6F0085F1B6 /* APBAlertViewDeferredSpec.mm */; };
+		FA25FEDB18DA7F980085F1B6 /* libDeferred.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA25FECF18DA7A2B0085F1B6 /* libDeferred.a */; };
 		FAB62F7B18D7D51000CE2D3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F7A18D7D51000CE2D3F /* Foundation.framework */; };
 		FAB62F7D18D7D51000CE2D3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F7C18D7D51000CE2D3F /* CoreGraphics.framework */; };
 		FAB62F7F18D7D51000CE2D3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB62F7E18D7D51000CE2D3F /* UIKit.framework */; };
@@ -156,6 +159,34 @@
 			remoteGlobalIDString = AEC40C88174C203700474D2D;
 			remoteInfo = "UIKit+PivotalSpecHelperStubs-StaticLib";
 		};
+		FA25FECE18DA7A2B0085F1B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA25FEC718DA7A2B0085F1B6 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E18A7B1515674D9B0083D745;
+			remoteInfo = Deferred;
+		};
+		FA25FED018DA7A2B0085F1B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA25FEC718DA7A2B0085F1B6 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E18A7B3015674EC20083D745;
+			remoteInfo = "Deferred-OSX";
+		};
+		FA25FED218DA7A2B0085F1B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA25FEC718DA7A2B0085F1B6 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E18A7B4415674ED10083D745;
+			remoteInfo = Specs;
+		};
+		FA25FED918DA7F8E0085F1B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA25FEC718DA7A2B0085F1B6 /* Deferred.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E18A7B1415674D9B0083D745;
+			remoteInfo = Deferred;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +202,10 @@
 		FA25FEC218DA71290085F1B6 /* APBAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBAlertView.h; sourceTree = "<group>"; };
 		FA25FEC318DA71290085F1B6 /* APBAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBAlertView.m; sourceTree = "<group>"; };
 		FA25FEC518DA72580085F1B6 /* APBAlertViewSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = APBAlertViewSpec.mm; sourceTree = "<group>"; };
+		FA25FEC718DA7A2B0085F1B6 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Deferred.xcodeproj; path = KSDeferred/Deferred.xcodeproj; sourceTree = "<group>"; };
+		FA25FED418DA7B580085F1B6 /* APBAlertViewDeferred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBAlertViewDeferred.h; sourceTree = "<group>"; };
+		FA25FED518DA7B580085F1B6 /* APBAlertViewDeferred.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBAlertViewDeferred.m; sourceTree = "<group>"; };
+		FA25FED718DA7B6F0085F1B6 /* APBAlertViewDeferredSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = APBAlertViewDeferredSpec.mm; sourceTree = "<group>"; };
 		FAB62F7718D7D51000CE2D3F /* AlertMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB62F7A18D7D51000CE2D3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAB62F7C18D7D51000CE2D3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA25FEDB18DA7F980085F1B6 /* libDeferred.a in Frameworks */,
 				FAB62F7D18D7D51000CE2D3F /* CoreGraphics.framework in Frameworks */,
 				FAB62F7F18D7D51000CE2D3F /* UIKit.framework in Frameworks */,
 				FAB62F7B18D7D51000CE2D3F /* Foundation.framework in Frameworks */,
@@ -219,6 +255,7 @@
 		FA0803FB18D7EA3D0092FD4F /* Externals */ = {
 			isa = PBXGroup;
 			children = (
+				FA25FEC718DA7A2B0085F1B6 /* Deferred.xcodeproj */,
 				FA25FE6418D922460085F1B6 /* Cedar.xcodeproj */,
 			);
 			path = Externals;
@@ -246,6 +283,7 @@
 			children = (
 				FA25FEBD18D924240085F1B6 /* ViewControllerSpec.mm */,
 				FA25FEC518DA72580085F1B6 /* APBAlertViewSpec.mm */,
+				FA25FED718DA7B6F0085F1B6 /* APBAlertViewDeferredSpec.mm */,
 				FA25FEB818D923B00085F1B6 /* Externals */,
 				FA25FE9918D922650085F1B6 /* Rakefile */,
 				FA25FE9218D922650085F1B6 /* Supporting Files */,
@@ -281,6 +319,16 @@
 				FA25FEA318D923940085F1B6 /* UIKit.xcodeproj */,
 			);
 			name = Externals;
+			sourceTree = "<group>";
+		};
+		FA25FEC818DA7A2B0085F1B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA25FECF18DA7A2B0085F1B6 /* libDeferred.a */,
+				FA25FED118DA7A2B0085F1B6 /* libDeferred-OSX.a */,
+				FA25FED318DA7A2B0085F1B6 /* Specs */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FAB62F6E18D7D51000CE2D3F = {
@@ -325,6 +373,8 @@
 				FAB62F9018D7D51000CE2D3F /* ViewController.m */,
 				FA25FEC218DA71290085F1B6 /* APBAlertView.h */,
 				FA25FEC318DA71290085F1B6 /* APBAlertView.m */,
+				FA25FED418DA7B580085F1B6 /* APBAlertViewDeferred.h */,
+				FA25FED518DA7B580085F1B6 /* APBAlertViewDeferred.m */,
 				FAB62F9218D7D51000CE2D3F /* Images.xcassets */,
 				FAB62F8118D7D51000CE2D3F /* Supporting Files */,
 			);
@@ -377,6 +427,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FA25FEDA18DA7F8E0085F1B6 /* PBXTargetDependency */,
 			);
 			name = AlertMe;
 			productName = AlertMe;
@@ -408,6 +459,10 @@
 				{
 					ProductGroup = FA25FE6518D922460085F1B6 /* Products */;
 					ProjectRef = FA25FE6418D922460085F1B6 /* Cedar.xcodeproj */;
+				},
+				{
+					ProductGroup = FA25FEC818DA7A2B0085F1B6 /* Products */;
+					ProjectRef = FA25FEC718DA7A2B0085F1B6 /* Deferred.xcodeproj */;
 				},
 				{
 					ProductGroup = FA25FEA418D923940085F1B6 /* Products */;
@@ -528,6 +583,27 @@
 			remoteRef = FA25FEB618D923940085F1B6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		FA25FECF18DA7A2B0085F1B6 /* libDeferred.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDeferred.a;
+			remoteRef = FA25FECE18DA7A2B0085F1B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA25FED118DA7A2B0085F1B6 /* libDeferred-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libDeferred-OSX.a";
+			remoteRef = FA25FED018DA7A2B0085F1B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA25FED318DA7A2B0085F1B6 /* Specs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Specs;
+			remoteRef = FA25FED218DA7A2B0085F1B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -574,6 +650,7 @@
 			files = (
 				FA25FEC618DA72580085F1B6 /* APBAlertViewSpec.mm in Sources */,
 				FA25FEBE18D924240085F1B6 /* ViewControllerSpec.mm in Sources */,
+				FA25FED818DA7B6F0085F1B6 /* APBAlertViewDeferredSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +662,7 @@
 				FAB62F8718D7D51000CE2D3F /* main.m in Sources */,
 				FAB62F9118D7D51000CE2D3F /* ViewController.m in Sources */,
 				FA25FEC418DA71290085F1B6 /* APBAlertView.m in Sources */,
+				FA25FED618DA7B580085F1B6 /* APBAlertViewDeferred.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +683,11 @@
 			isa = PBXTargetDependency;
 			name = "UIKit+PivotalSpecHelperStubs-StaticLib";
 			targetProxy = FA25FEBF18D925950085F1B6 /* PBXContainerItemProxy */;
+		};
+		FA25FEDA18DA7F8E0085F1B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Deferred;
+			targetProxy = FA25FED918DA7F8E0085F1B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -732,6 +815,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/KSDeferred/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -764,6 +852,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/KSDeferred/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

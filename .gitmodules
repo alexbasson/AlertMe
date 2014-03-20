@@ -4,3 +4,6 @@
 [submodule "Externals/PivotalCoreKit"]
 	path = Externals/PivotalCoreKit
 	url = git@github.com:pivotal/PivotalCoreKit.git
+[submodule "Externals/KSDeferred"]
+	path = Externals/KSDeferred
+	url = git@github.com:kseebaldt/deferred.git
