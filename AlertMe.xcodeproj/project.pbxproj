@@ -806,6 +806,7 @@
 				FA25FE9F18D922650085F1B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAB62F7218D7D51000CE2D3F /* Build configuration list for PBXProject "AlertMe" */ = {
 			isa = XCConfigurationList;
